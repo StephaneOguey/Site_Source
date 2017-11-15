@@ -1,5 +1,9 @@
+html{
+  overflow-x: hidden;
+}
 body {
 	background-image: url(http://p1.pichost.me/i/11/1344899.jpg);
+  background-attachment: fixed;
   background-repeat: no-repeat;
 	background-size: cover;
   font-family: Arial, sans-serif;
@@ -11,7 +15,20 @@ body {
   display: inline-block;
 	text-align: center;
 }
-
+header{
+  display: block;
+  height: auto;
+  background: rgba(255, 255, 255, 0.4);
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+header img{
+  width: 175px;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
 a {
 	transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
 	display: block;
