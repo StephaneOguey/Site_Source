@@ -10,11 +10,6 @@ body {
 	font-weight: bold;
 	font-size: 14px;
 }
-
-.wrap {
-  display: inline-block;
-	text-align: center;
-}
 header{
   display: block;
   height: auto;
@@ -29,7 +24,14 @@ header img{
   padding-bottom: 10px;
   padding-left: 10px;
 }
-a {
+.wrap {
+  position: fixed;
+  width: 200px;
+  height: 100px;
+  display: inline-block;
+  text-align: center;
+}
+.wrap a {
 	transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
 	display: block;
 	margin: 20px auto;
@@ -57,4 +59,207 @@ a.button2 {
 a.button2:hover {
 	color: rgba(255, 255, 255, 0.85);
 	box-shadow: rgba(255, 255, 255, 0.7) 0 80px 0px 2px inset;
+}
+section{
+  display: inline-block;
+  margin-left: 250px
+}
+
+
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+@import url(https://fonts.googleapis.com/css?family=Dosis:800);
+.layer {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 90px;
+  bottom: 30px;
+}
+.layer2 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+.line {
+  width: 2px;
+  heighT: 100px;
+  background: #fff;
+  animation: 1.5s line infinite;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@keyframes line {
+  0% {
+    width: 1px;
+  }
+  50% {
+    width: 13px;
+  }
+  100% {
+    width: 1px;
+  }
+}
+.six {
+  height: 200px;
+  color: #fff;
+  position: absolute;
+  left: -80px;
+  top: 50%;
+  transform: translateY(-50%);
+  animation: 1.5s move infinite;
+}
+@keyframes move {
+  0% {
+    left: -90px;
+    opacity: 1;
+  }
+  80% {
+    left: -10px;
+    opacity: 1;
+  }
+  100% {
+    left: 0px;
+    opacity: 0;
+  }
+}
+
+svg {
+  transform: scale(0.23);
+  position: absolute;
+  top: -130px;
+  left: -180px;
+}
+
+.glow {
+  width: 140px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  lefT: 0px;
+  transform: translate(-50%, -50%);
+}
+
+li {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  background: #fff;
+  position: absolute;
+  -webkit-filter: blur(6px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+li:nth-child(1) {
+  animation: 1.5s first infinite;
+}
+
+@keyframes first {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  60% {
+    transform: translate(-150%, -50%) scale(0.7);
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+li:nth-child(2) {
+  animation: 1.5s second infinite;
+}
+
+@keyframes second {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  60% {
+    transform: translate(-100%, -50%) scale(0.85);
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+li:nth-child(3) {
+  animation: 1.5s third infinite;
+}
+
+@keyframes third {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  60% {
+    transform: translate(-50%, -50%);
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+li:nth-child(4) {
+  animation: 1.5s fourth infinite;
+}
+
+@keyframes fourth {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  60% {
+    transform: translate(0%, -50%) scale(0.85);
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+li:nth-child(5) {
+  animation: 1.5s fifth infinite;
+}
+
+@keyframes fifth {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  60% {
+    transform: translate(50%, -50%) scale(0.7);
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
