@@ -66,6 +66,7 @@ a.button2:hover {
 section{
   display: inline-block;
   margin-left: 250px;
+  margin-right: 250px;
   margin-top: 80px;
 }
 
@@ -76,7 +77,7 @@ section{
   width: 200px;
   height: 200px;
   position: fixed ;
-  left: 80px;
+  right: -50px;
   bottom: 30px;
 }
 .layer2 {
